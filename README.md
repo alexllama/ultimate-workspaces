@@ -146,4 +146,4 @@ Settings can be adjusted inline on the widget's entry in `~/.config/omarchy/shel
 
 ## License
 
-MIT — see [LICENSE](https://www.google.com/search?q=LICENSE).
+MIT — see [LICENSE](https://opensource.org/license/mit).
