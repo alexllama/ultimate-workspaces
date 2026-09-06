@@ -189,19 +189,31 @@ BarWidget {
     // Example: Yazi runs inside a terminal
     // but you want to see the icon for Yazi instead of the one
     // for the terminal
-    if (title.indexOf("Yazi:") === 0) {
-      return ""
+//    if (title.indexOf("Yazi:") === 0) {
+//      return ""
+//    }
+//    if (title.indexOf("cava") === 0) {
+//      return ""
+//    }
+//    if (title.indexOf("cliamp") === 0) {
+//      return ""
+//    }
+//    if (title.indexOf("micro") === 0) {
+//      return ""
+//    }
+//    if (title.indexOf("Google Gemini:") === 0) {
+//      return ""
+//    }
+
+    if (title.startsWith("Yazi:") || 
+        title.startsWith("cava") || 
+        title.startsWith("cliamp") || 
+        title.startsWith("micro") || 
+        title.startsWith("Google Gemini:")) 
+    {
+        return "";
     }
-    if (title.indexOf("cava") === 0) {
-      return ""
-    }
-    if (title.indexOf("cliamp") === 0) {
-      return ""
-    }
-    if (title.indexOf("micro") === 0) {
-      return ""
-    }
-    
+        
     var iconName = root.iconNameFor(appId)
     if (iconName.length > 0) {
       if (root.appLibrary) return root.appLibrary.iconSource(iconName)
