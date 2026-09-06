@@ -189,22 +189,6 @@ BarWidget {
     // Example: Yazi runs inside a terminal
     // but you want to see the icon for Yazi instead of the one
     // for the terminal
-//    if (title.indexOf("Yazi:") === 0) {
-//      return ""
-//    }
-//    if (title.indexOf("cava") === 0) {
-//      return ""
-//    }
-//    if (title.indexOf("cliamp") === 0) {
-//      return ""
-//    }
-//    if (title.indexOf("micro") === 0) {
-//      return ""
-//    }
-//    if (title.indexOf("Google Gemini:") === 0) {
-//      return ""
-//    }
-
     if (title.startsWith("Yazi:") || 
         title.startsWith("cava") || 
         title.startsWith("cliamp") || 
@@ -221,9 +205,6 @@ BarWidget {
     }
     return ""
   }
-
-
-
 
   function fallbackGlyphFor(appObj) {
     if (!appObj) return IconRules.fallback
