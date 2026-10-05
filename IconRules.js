@@ -41,7 +41,7 @@ var rules = [
 
   // Misc
   { pattern: "windows",                                                       icon: "" },
-  { pattern: "ai.opencode.desktop|opencode",                                  icon: "" },
+  { pattern: "ai.opencode.desktop|opencode",                                  icon: "󱞟" },
   { pattern: "org.jellyfin.JellyfinDesktop|jellyfin",                         icon: "󰼁" },
   { pattern: "chrome-claude.ai__-default|claude",                             icon: "󰭹" },
   { pattern: ".*github.*",                                                    icon: "󰊤" },

@@ -189,6 +189,12 @@ BarWidget {
     // Example: Yazi runs inside a terminal
     // but you want to see the icon for Yazi instead of the one
     // for the terminal
+
+    // org.omarchy.agent is a shared class (see omarchy-agent), so every agent
+    // TUI looks identical by class. Disambiguate on the title instead.
+    if (appId === "org.omarchy.agent" && /opencode/i.test(title))
+        return Quickshell.iconPath("opencode", true)
+
     if (title.startsWith("Yazi:") || 
         title.startsWith("cava") || 
         title.startsWith("cliamp") || 
