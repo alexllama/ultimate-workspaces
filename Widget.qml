@@ -195,7 +195,11 @@ BarWidget {
     if (appId === "org.omarchy.agent" && /opencode/i.test(title))
         return Quickshell.iconPath("opencode", true)
 
-    if (title.startsWith("Yazi:") || 
+    // BambuStudio flatpak uses the official icon
+    if (/bambustudio/i.test(appId) || /bambu/i.test(appId))
+        return Quickshell.iconPath("com.bambulab.BambuStudio", true)
+ 
+    if (title.startsWith("Yazi:") ||
         title.startsWith("cava") || 
         title.startsWith("cliamp") || 
         title.startsWith("micro") || 

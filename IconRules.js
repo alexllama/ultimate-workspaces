@@ -51,7 +51,7 @@ var rules = [
   { pattern: ".*qwen.*",                                                      icon: "󰭹" },
   { pattern: "brave-x.com.*",                                                 icon: "󰕄" },
   { pattern: ".*Tailscale",                                                   icon: "󱗼" },
-  { pattern: "BambuStudio",                                                   icon: "󰹛" },
+  { pattern: "BambuStudio|bambu-studio|com\\.bambulab\\.BambuStudio",           icon: "" },
   { pattern: ".*cava.*",                                                      icon: "󱇅" },
   
 
