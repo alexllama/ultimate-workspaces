@@ -104,7 +104,7 @@ StartupWMClass=brave-youtube.com__-Default
 ## Installation
 
 ```bash
-omarchy plugin add [https://github.com/alexllama/ultimate-workspaces.git](https://github.com/alexllama/ultimate-workspaces.git) --enable
+omarchy plugin add https://github.com/alexllama/ultimate-workspaces.git --enable
 omarchy plugin disable omarchy.workspaces   # optional: replace the stock widget
 
 ```
